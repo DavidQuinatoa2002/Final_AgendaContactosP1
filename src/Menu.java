@@ -21,6 +21,14 @@ public class Menu {
         System.out.print("Porfavor, seleccione una opción: ");
     }
 
+    public void repiteMenu(){
+        while (true) {
+            mostrarMenu();
+            int opcion = Integer.parseInt(scanner.next());
+            ejecutarOpcion(opcion);
+        }
+    }
+
     public void ejecutarOpcion(int opcion) {
         switch (opcion) {
             case 1:
